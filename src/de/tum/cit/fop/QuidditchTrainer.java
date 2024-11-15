@@ -6,6 +6,6 @@ public class QuidditchTrainer extends Participant {
     }
 
     public String toString() {
-        return "QuidditchTrainer{}";
+        return "Quidditch Trainer " + getName();
     }
 }
