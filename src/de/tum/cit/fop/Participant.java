@@ -5,7 +5,7 @@ public abstract class Participant {
     private String lastName;
     private String hogwartsID;
 
-    public Participant(String firstName, String lastName, String hogwartsID) {
+    protected Participant(String firstName, String lastName, String hogwartsID) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.hogwartsID = hogwartsID;
