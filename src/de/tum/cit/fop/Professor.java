@@ -15,4 +15,5 @@ public class Professor extends Participant {
     public void setTitle(String title) {
         this.title = title;
     }
+
 }
