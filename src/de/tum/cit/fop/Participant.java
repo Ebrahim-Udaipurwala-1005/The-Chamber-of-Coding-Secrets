@@ -3,12 +3,12 @@ package de.tum.cit.fop;
 public abstract class Participant {
     private String firstName;
     private String lastName;
-    private String hogwartsId;
+    private String hogwartsID;
 
-    public Participant(String firstName, String lastName, String hogwartsId) {
+    public Participant(String firstName, String lastName, String hogwartsID) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.hogwartsId = hogwartsId;
+        this.hogwartsID = hogwartsID;
     }
 
     public String getFirstName() {
@@ -27,15 +27,15 @@ public abstract class Participant {
         this.lastName = lastName;
     }
 
-    public String getHogwartsId() {
-        return hogwartsId;
+    public String getHogwartsID() {
+        return hogwartsID;
     }
 
-    public void setHogwartsId(String hogwartsId) {
-        this.hogwartsId = hogwartsId;
+    public void setHogwartsID(String hogwartsID) {
+        this.hogwartsID = hogwartsID;
     }
 
-    public String getName(){
-        return getFirstName() + " " + getLastName();
+    public String getName(){;
+        return firstName + " " + lastName;
     }
 }
