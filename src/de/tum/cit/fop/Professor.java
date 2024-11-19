@@ -21,6 +21,14 @@ public class Professor extends Participant {
         this.title = title;
     }
 
+    public List<Lecture> getLectures() {
+        return lectures;
+    }
+
+    public void setLectures(List<Lecture> lectures) {
+        this.lectures = lectures;
+    }
+
     public void openLecture(Lecture lecture) {
         System.out.println("Welcome to the lecture [name of Lecture]! I'm Prof. [name of professor].");
     }
