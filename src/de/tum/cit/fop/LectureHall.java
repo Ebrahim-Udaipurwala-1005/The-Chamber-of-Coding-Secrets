@@ -1,5 +1,8 @@
 package de.tum.cit.fop;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class LectureHall{
     private String name;
     private int capacity;
@@ -47,5 +50,21 @@ public class LectureHall{
 
     public void setRowsOfApprentices(Apprentice[][] rowsOfApprentices) {
         this.rowsOfApprentices = rowsOfApprentices;
+    }
+
+    public String toString(){
+        String full = new String(this.name + " hall: \n");
+        for (int i = 0; i < rows; i++) {
+            full += "Row " + (i+1) + ": ";
+            for (int j = 0; j < 30; j++){
+                if (rowsOfApprentices[i][j] == null) full += "[]";
+                else full += "[" + rowsOfApprentices[i][j].getName() + "]";
+            }
+            full += "\n";
+        }
+        return full;
+    }
+
+    public void placeApprentices(List<Apprentice> waitingApprentices) {
     }
 }
