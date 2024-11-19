@@ -1,11 +1,21 @@
 package de.tum.cit.fop;
 
 public class QuidditchTrainer extends Participant {
-    public QuidditchTrainer(String firstName, String lastName, String hogwartsID) {
+    private Lecture lecture;
+    public QuidditchTrainer(String firstName, String lastName, String hogwartsID, Lecture lecture) {
         super(firstName, lastName, hogwartsID);
+        this.lecture = lecture;
     }
 
     public String toString() {
         return "Quidditch Trainer " + getName();
+    }
+
+    public Lecture getLecture() {
+        return lecture;
+    }
+
+    public void setLecture(Lecture lecture) {
+        this.lecture = lecture;
     }
 }

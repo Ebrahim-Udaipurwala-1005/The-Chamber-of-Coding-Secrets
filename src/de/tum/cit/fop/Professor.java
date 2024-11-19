@@ -2,10 +2,12 @@ package de.tum.cit.fop;
 
 public class Professor extends Participant {
     private String title;
+    private Lecture lecture;
 
-    public Professor(String firstName, String lastName, String hogwartsID, String title) {
+    public Professor(String firstName, String lastName, String hogwartsID, String title, Lecture lecture) {
         super(firstName, lastName, hogwartsID);
         this.title = title;
+        this.lecture = lecture;
     }
 
     public String getTitle() {
@@ -14,6 +16,14 @@ public class Professor extends Participant {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Lecture getLecture() {
+        return lecture;
+    }
+
+    public void setLecture(Lecture lecture) {
+        this.lecture = lecture;
     }
 
     public void openLecture(Lecture lecture) {
