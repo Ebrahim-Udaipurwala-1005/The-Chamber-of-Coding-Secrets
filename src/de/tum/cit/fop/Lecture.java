@@ -10,14 +10,16 @@ public class Lecture {
     private List<Apprentice> apprentices;
     private List<WizardAide> wizardsAides;
     private List<QuidditchTrainer> quidditchTrainers;
+    private LectureHall lectureHall;
 
-    public Lecture(String id, String name, Professor professor, List<Apprentice> apprentices, List<WizardAide> wizardsAides, List<QuidditchTrainer> quidditchTrainers) {
+    public Lecture(String id, String name, Professor professor, List<Apprentice> apprentices, List<WizardAide> wizardsAides, List<QuidditchTrainer> quidditchTrainers, LectureHall lectureHall) {
         this.id = id;
         this.name = name;
         this.professor = professor;
         this.apprentices = new ArrayList<>();
         this.wizardsAides = new ArrayList<>();
         this.quidditchTrainers = new ArrayList<>();
+        this.lectureHall = lectureHall;
     }
 
     public String getId() {
@@ -66,6 +68,14 @@ public class Lecture {
 
     public void setQuidditchTrainers(List<QuidditchTrainer> quidditchTrainers) {
         this.quidditchTrainers = quidditchTrainers;
+    }
+
+    public LectureHall getLectureHall() {
+        return lectureHall;
+    }
+
+    public void setLectureHall(LectureHall lectureHall) {
+        this.lectureHall = lectureHall;
     }
 
     public void addParticipant(Participant p) {
