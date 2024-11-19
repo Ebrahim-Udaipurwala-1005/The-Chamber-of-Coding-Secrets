@@ -38,4 +38,7 @@ public abstract class Participant {
     public String getName(){;
         return firstName + " " + lastName;
     }
+
+    public void attend(Lecture lecture){
+    }
 }
