@@ -30,7 +30,7 @@ public class Professor extends Participant {
     }
 
     public void openLecture(Lecture lecture) {
-        System.out.println("Welcome to the lecture [name of Lecture]! I'm Prof. [name of professor].");
+        System.out.println("Welcome to the lecture " + lecture.getId() + "! I'm Prof. " +super.getName());
     }
 
     public void closeLecture(Lecture lecture) {
