@@ -30,7 +30,7 @@ public class Professor extends Participant {
     }
 
     public void openLecture(Lecture lecture) {
-        System.out.println("Welcome to the lecture " + lecture.getId() + "! I'm Prof. " +super.getName());
+        System.out.println("Welcome to the lecture " + lecture.getName() + "! I'm Prof. " + super.getName());
     }
 
     public void closeLecture(Lecture lecture) {
@@ -38,7 +38,18 @@ public class Professor extends Participant {
     }
 
     public void addLecture(Lecture lecture) {
-        System.out.println("The lecture [lecture name] is already held by another professor.");
+        if(super.getHogwartsID().equals(lecture.getId())){
+            lectures.add(lecture);
+            lecture.setProfessor(this);
+            return;
+        }
+        else if(lecture.getProfessor() == null){
+            lectures.add(lecture);
+            lecture.setProfessor(this);
+        }
+        else{
+            System.out.println("The lecture " + lecture.getId() + " is already held by another professor.");
+        }
     }
 
     @Override
