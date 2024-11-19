@@ -35,6 +35,6 @@ public class Professor extends Participant {
 
     @Override
     public String toString() {
-        return title + " " + getName();
+        return title + " " + super.getName();
     }
 }

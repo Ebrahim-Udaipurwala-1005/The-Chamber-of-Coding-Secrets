@@ -8,7 +8,7 @@ public class QuidditchTrainer extends Participant {
     }
 
     public String toString() {
-        return "Quidditch Trainer " + getName();
+        return "Quidditch Trainer " + super.getName();
     }
 
     public Lecture getLecture() {
