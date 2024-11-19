@@ -16,16 +16,22 @@ public class Professor extends Participant {
         this.title = title;
     }
 
-    public void openLecture(){
+    public void openLecture(Lecture lecture) {
         System.out.println("Welcome to the lecture [name of Lecture]! I'm Prof. [name of professor].");
     }
 
-    public void closeLecture(){
+    public void closeLecture(Lecture lecture) {
         System.out.println("This is all for today. See you next week!");
     }
 
-    public void addLecture(){
+    public void addLecture(Lecture lecture) {
         System.out.println("The lecture [lecture name] is already held by another professor.");
     }
 
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "title='" + title + '\'' +
+                '}';
+    }
 }
