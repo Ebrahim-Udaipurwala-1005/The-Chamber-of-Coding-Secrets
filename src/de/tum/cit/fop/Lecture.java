@@ -109,7 +109,9 @@ public class Lecture {
     }
 
     public void addParticipants(List<Participant> participants) {
-
+        for (Participant p : participants) {
+            addParticipant(p);
+        }
     }
 
     public void takePlace(){
