@@ -65,6 +65,25 @@ public class LectureHall{
         return full;
     }
 
-    public void placeApprentices(List<Apprentice> waitingApprentices) {
+    public void placeApprentices(List<Apprentice> apprentices) {
+        System.out.println("Waiting apprentices: " + apprentices.size());
+        if (apprentices.size() > capacity) {
+            System.out.println(name + "hall doesn't have enough places for all the apprentices!\n" +
+                    "We can place only the first " + capacity + " out of " + apprentices.size() + " apprentices.");
+        }
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < 30; j++) {
+                rowsOfApprentices[i][j] = apprentices.get(i * 30 + j);
+            }
+        }
+        if (apprentices.size() <= capacity)
+            System.out.println("All apprentices are sitting in the lecture hall.");
+        System.out.println(toString());
+    }
+
+    public void empty(){
+        if (rowsOfApprentices != null) {
+            rowsOfApprentices = new Apprentice[rows][30];
+        }
     }
 }
