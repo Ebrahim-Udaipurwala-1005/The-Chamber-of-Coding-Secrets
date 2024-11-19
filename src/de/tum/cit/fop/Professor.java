@@ -7,7 +7,7 @@ public class Professor extends Participant {
     private String title;
     private List<Lecture> lectures;
 
-    public Professor(String firstName, String lastName, String hogwartsID, String title, List<Lecture> lectures) {
+    public Professor(String firstName, String lastName, String hogwartsID, String title) {
         super(firstName, lastName, hogwartsID);
         this.title = title;
         lectures = new ArrayList<Lecture>();
