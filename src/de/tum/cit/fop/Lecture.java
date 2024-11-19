@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lecture {
-    private String id;
     private String name;
+    private String id;
     private Professor professor;
     private List<Apprentice> apprentices;
     private List<WizardAide> wizardAides;
@@ -13,8 +13,8 @@ public class Lecture {
     private LectureHall lectureHall;
 
     public Lecture(String id, String name, Professor professor, LectureHall lectureHall) {
-        this.id = id;
         this.name = name;
+        this.id = id;
         this.professor = professor;
         this.apprentices = new ArrayList<>();
         this.wizardAides = new ArrayList<>();
