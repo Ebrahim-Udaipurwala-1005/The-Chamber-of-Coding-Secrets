@@ -40,5 +40,6 @@ public abstract class Participant {
     }
 
     public void attend(Lecture lecture){
+        lecture.addParticipant(this);
     }
 }
