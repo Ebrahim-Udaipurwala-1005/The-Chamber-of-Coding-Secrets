@@ -79,7 +79,33 @@ public class Lecture {
     }
 
     public void addParticipant(Participant p) {
-
+        if (!apprentices.contains(p) && !wizardAides.contains(p) && !quidditchTrainers.contains(p) && !p.equals(professor)) {
+            if (p instanceof Professor) {
+                if (professor == null) {
+                    professor = (Professor) p;
+                } else {
+                    System.out.println("This lecture already has a professor!");
+                }
+            } else if (p instanceof WizardAide) {
+                if (((WizardAide) p).getLecture().equals(this)) {
+                    wizardAides.add((WizardAide) p);
+                } else {
+                    apprentices.add(new Apprentice((WizardAide) p));
+                }
+            } else if (p instanceof QuidditchTrainer) {
+                if (((QuidditchTrainer) p).getLecture().equals(this)) {
+                    quidditchTrainers.add((QuidditchTrainer) p);
+                } else {
+                    apprentices.add(new Apprentice((QuidditchTrainer) p));
+                }
+            } else if (p instanceof Apprentice) {
+                apprentices.add((Apprentice) p);
+            } else {
+                System.out.println("No such participants allowed in this lecture.");
+            }
+        } else {
+            System.out.println(p.getName() + " hogwartsID:" + p.getHogwartsID() + " already attends/holds the lecture.");
+        }
     }
 
     public void addParticipants(List<Participant> participants) {
