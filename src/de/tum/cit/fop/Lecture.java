@@ -82,7 +82,7 @@ public class Lecture {
 
     }
 
-    public void addParticipants(List<Participant> particpants) {
+    public void addParticipants(List<Participant> participants) {
 
     }
 
