@@ -1,5 +1,6 @@
 package de.tum.cit.fop;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lecture {
@@ -14,9 +15,9 @@ public class Lecture {
         this.id = id;
         this.name = name;
         this.professor = professor;
-        this.apprentices = apprentices;
-        this.wizardsAides = wizardsAides;
-        this.quidditchTrainers = quidditchTrainers;
+        this.apprentices = new ArrayList<>();
+        this.wizardsAides = new ArrayList<>();
+        this.quidditchTrainers = new ArrayList<>();
     }
 
     public String getId() {
