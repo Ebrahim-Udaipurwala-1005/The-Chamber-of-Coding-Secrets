@@ -8,7 +8,7 @@ public class Lecture {
     private String name;
     private Professor professor;
     private List<Apprentice> apprentices;
-    private List<WizardAide> wizardsAides;
+    private List<WizardAide> wizardAides;
     private List<QuidditchTrainer> quidditchTrainers;
     private LectureHall lectureHall;
 
@@ -17,7 +17,7 @@ public class Lecture {
         this.name = name;
         this.professor = professor;
         this.apprentices = new ArrayList<>();
-        this.wizardsAides = new ArrayList<>();
+        this.wizardAides = new ArrayList<>();
         this.quidditchTrainers = new ArrayList<>();
         this.lectureHall = lectureHall;
     }
@@ -54,12 +54,12 @@ public class Lecture {
         this.apprentices = apprentices;
     }
 
-    public List<WizardAide> getWizardsAides() {
-        return wizardsAides;
+    public List<WizardAide> getWizardAides() {
+        return wizardAides;
     }
 
-    public void setWizardsAides(List<WizardAide> wizardsAides) {
-        this.wizardsAides = wizardsAides;
+    public void setWizardsAides(List<WizardAide> wizardAides) {
+        this.wizardAides = wizardAides;
     }
 
     public List<QuidditchTrainer> getQuidditchTrainers() {
