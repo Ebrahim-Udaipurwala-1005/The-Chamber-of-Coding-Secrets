@@ -30,8 +30,6 @@ public class Professor extends Participant {
 
     @Override
     public String toString() {
-        return "Professor{" +
-                "title='" + title + '\'' +
-                '}';
+        return title + " " + getName();
     }
 }
