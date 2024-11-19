@@ -6,7 +6,7 @@ public class LectureHall{
     private int rows;
     private Apprentice[][] rowsOfApprentices;
 
-    public LectureHall(String name, int capacity, int rows) {
+    public LectureHall(String name, int capacity) {
         this.name = name;
         this.capacity = capacity;
         if (capacity <= 90){
