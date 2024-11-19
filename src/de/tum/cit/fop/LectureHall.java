@@ -6,11 +6,15 @@ public class LectureHall{
     private int rows;
     private Apprentice[][] rowsOfApprentices;
 
-    public LectureHall(String name, int capacity, int rows, Apprentice[][] rowsOfApprentices) {
+    public LectureHall(String name, int capacity, int rows) {
         this.name = name;
         this.capacity = capacity;
-        this.rows = rows;
-        this.rowsOfApprentices = rowsOfApprentices;
+        if (capacity <= 90){
+            capacity = 90;
+        }
+        capacity -= capacity % 30;
+        rows = capacity / 30;
+        rowsOfApprentices = new Apprentice[rows][30];
     }
 
     public String getName() {
