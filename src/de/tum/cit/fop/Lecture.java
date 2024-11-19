@@ -12,7 +12,7 @@ public class Lecture {
     private List<QuidditchTrainer> quidditchTrainers;
     private LectureHall lectureHall;
 
-    public Lecture(String id, String name, Professor professor, LectureHall lectureHall) {
+    public Lecture(String name, String id, Professor professor, LectureHall lectureHall) {
         this.name = name;
         this.id = id;
         this.professor = professor;
