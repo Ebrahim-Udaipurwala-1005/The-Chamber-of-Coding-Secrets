@@ -1,11 +1,16 @@
 package de.tum.cit.fop;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Professor extends Participant {
     private String title;
+    private List<Lecture> lectures;
 
-    public Professor(String firstName, String lastName, String hogwartsID, String title) {
+    public Professor(String firstName, String lastName, String hogwartsID, String title, List<Lecture> lectures) {
         super(firstName, lastName, hogwartsID);
         this.title = title;
+        lectures = new ArrayList<Lecture>();
     }
 
     public String getTitle() {
