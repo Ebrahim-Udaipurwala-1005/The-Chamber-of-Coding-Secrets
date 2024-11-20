@@ -115,6 +115,9 @@ public class Lecture {
     }
 
     public void takePlace(){
-
+        lectureHall.placeApprentices(this.getApprentices());
+        professor.openLecture(this);
+        professor.closeLecture(this);
+        lectureHall.empty();
     }
 }
