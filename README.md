@@ -1,4 +1,4 @@
-# H04E02 - The Chamber of Coding Secret
+# The Chamber of Coding Secret
 
 This project is a solution to the "The Chamber of Coding Secret" exercise for the **INHN0002 Fundamentals of Programming** course, taught by Prof. Dr. Stefan Wagner. This assignment was a practical exercise in **Object-Oriented Programming (OOP)**, where the main objective was to model a magical lecture system for a school of witchcraft and wizardry by implementing a class hierarchy and a set of business rules for managing participants.
 
